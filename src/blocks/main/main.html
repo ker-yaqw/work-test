@@ -1,0 +1,346 @@
+<main class="main">
+  <section class="user-panel">
+    <picture class="user-panel__ava">
+      <source srcset="img/user-ava.svg" type="image/svg" />
+      <img class="user-panel__ava-img" src="img/user-ava.svg" width="56" height="56" alt="ava"/>
+    </picture>
+    <div class="fast-menu">
+      <ul class="fast-menu__list">
+        <li class="fast-menu__item" data-modal-task></li>
+        <li class="fast-menu__item"></li>
+        <li class="fast-menu__item"></li>
+        <li class="fast-menu__item"></li>
+        <li class="fast-menu__item"></li>
+        <li class="fast-menu__item"></li>
+      </ul>
+    </div>
+    <ul class="button-help">
+      <li class="button-help__item" data-modal-help></li>
+    </ul>
+  </section>
+
+  <section class="widget">
+      <div class="widget-tabcontainer">
+        <div class="widget-content">
+          <div class="widget__wrapper">
+            <div class="widget-item">
+                <div class="widget-item__status widget-item__status--blue"></div>
+                <div class="widget-item__headers">
+                    <div class="widget-item__headers-name">Распределение задач</div>
+                    <ul class="widget-item__headers-filters">
+                      <li class="widget-item__headers-filters-list">Задачи</li>
+                      <li class="widget-item__headers-filters-list"><a class="widget-item__headers-filters-link" href="#!">Неделя</a></li>
+                      <li class="widget-item__headers-filters-list"><a class="widget-item__headers-filters-link" href="#!">08.01.22 - 15.01.22</a></li>
+                    </ul>
+                    <div class="widget-item__headers-button"></div>
+                </div>
+                <div class="widget-item__chart-container">
+                  <div class="widget-item__chart-image">
+                    <canvas id="chart-doughnut" style="max-width: 300px; height: 300px;"></canvas>
+                  </div>
+                  <ul class="widget-item__legend"></ul>
+                </div>
+                <div class="widget-item__actions">
+                    <div class="widget-item__actions-info">
+                        <span>на 15 фев 11:26</span>
+                    </div>
+                    <div class="widget-item__actions-buttons">
+                        <div class="widget-item__actions-button"></div>
+                        <div class="widget-item__actions-button"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-item">
+              <div class="widget-item__status widget-item__status--red"></div>
+                <div class="widget-item__headers">
+                    <div class="widget-item__headers-name">Воронка сделок</div>
+                    <ul class="widget-item__headers-filters">
+                      <li class="widget-item__headers-filters-list">Сделки</li>
+                      <li class="widget-item__headers-filters-list"><a class="widget-item__headers-filters-link" href="#!">Неделя</a></li>
+                      <li class="widget-item__headers-filters-list"><a class="widget-item__headers-filters-link" href="#!">08.01.22 - 15.01.22</a></li>
+                    </ul>
+                    <div class="widget-item__headers-button"></div>
+                </div>
+
+                <div class="widget-item__actions">
+                    <div class="widget-item__actions-info">
+                        <span>на 15 фев 11:26</span>
+                    </div>
+                    <div class="widget-item__actions-buttons">
+                        <div class="widget-item__actions-button"></div>
+                        <div class="widget-item__actions-button"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-item">
+              <div class="widget-item__status widget-item__status--orange"></div>
+                <div class="widget-item__headers">
+                    <div class="widget-item__headers-name">Контакты</div>
+                    <ul class="widget-item__headers-filters">
+                      <li class="widget-item__headers-filters-list">Контакты</li>
+                      <li class="widget-item__headers-filters-list">Фильтр не выбран</li>
+                    </ul>
+                    <div class="widget-item__headers-button"></div>
+                </div>
+                <div class="widget-item__contacts">
+                  <div class="widget-item__contacts-wrapper">
+                    <form class="widget-item__contacts-form" action="#" method="post">
+                      <input class="widget-item__contacts-input" type="text" placeholder="Быстрый поиск" name="search" maxlength="20">
+                    </form>
+                    <a class="widget-item__contacts-link" href="#!">Создать</a>
+                  </div>
+                  <ul class="widget-item__contacts-list">
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Михаил</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="#!">Не указано</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Илья</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="mailto:manager@temp.ru">manager@temp.ru</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Мария</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="mailto:pr@temp.ru">pr@temp.ru</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Снежана</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="#!">Не указано</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Виталий</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="mailto:director@temp.ru">director@temp.ru</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Илья</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="mailto:manager@temp.com">manager@temp.com</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Илья</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="mailto:manager@temp.ru">manager@temp.ru</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Мария</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="mailto:pr@temp.ru">pr@temp.ru</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Снежана</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="#!">Не указано</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Виталий</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="mailto:director@temp.ru">director@temp.ru</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                      <li class="widget-item__contacts-task">
+                        <div class="widget-item__contacts-task-name">Илья</div>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--phone" href="tel:+79780000000">+7 978 000 00 00</a>
+                        <a class="widget-item__contacts-task-link widget-item__contacts-task-link--email" href="mailto:manager@temp.com">manager@temp.com</a>
+                        <div class="widget-item__contacts-task-avatar"></div>
+                      </li>
+                  </ul>
+                </div>
+                <div class="widget-item__actions">
+                    <div class="widget-item__actions-info">
+                      <span>Контактов 11</span>  
+                      <span>на 15 фев 11:26</span>
+                    </div>
+                    <div class="widget-item__actions-buttons">
+                        <div class="widget-item__actions-button"></div>
+                        <div class="widget-item__actions-button"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-item"></div>
+            <div class="widget-item"></div>
+            <div class="widget-item"></div>
+          </div>
+        </div>
+        <div class="widget-content">Сделки</div>
+        <div class="widget-content">Задачи</div>
+        <div class="widget-content">Проекты</div>
+        <div class="widget-content">Контакты</div>
+      </div>
+  </section>
+  
+  <section class="modal-help">
+        <div class="modal-help__content">
+          <div data-close class="modal-help__close">
+              <div class="modal-help__close-icon"></div>
+          </div>
+          <div class="modal-help__content-name">Поддержка пользователя</div>
+          <ul class="modal-help__content-list">
+              <div class="modal-help__content-title">Найдите ответ на свой вопрос</div>
+              <li class="modal-help__content-item">
+                  <div class="modal-help__content-icon modal-help__content-icon--1"></div>
+                  <a class="modal-help__content-link" href="#!">Перейти в Центр Помощи</a>
+              </li>
+              <li class="modal-help__content-item">
+                  <div class="modal-help__content-icon modal-help__content-icon--2"></div>
+                  <a class="modal-help__content-link" href="#!">Посмотреть обучающее видео</a>
+              </li>
+              <li class="modal-help__content-item">
+                  <div class="modal-help__content-icon modal-help__content-icon--3"></div>
+                  <a class="modal-help__content-link" href="#!">Интерактивное обучение</a>
+              </li>
+          </ul>
+          <ul class="modal-help__content-list">
+              <div class="modal-help__content-title">задайте нам вопрос</div>
+              <li class="modal-help__content-item">
+                  <div class="modal-help__content-icon modal-help__content-icon--4"></div>
+                  <a class="modal-help__content-link" href="#!">Написать в чат</a>
+              </li>
+              <li class="modal-help__content-item">
+                  <div class="modal-help__content-icon modal-help__content-icon--5"></div>
+                  <a class="modal-help__content-link" href="#!">Написать на электронную почту</a>
+              </li>
+              <li class="modal-help__content-item">
+                  <div class="modal-help__content-icon modal-help__content-icon--6"></div>
+                  <a class="modal-help__content-link" href="#!">Оставить запрос в поддержку</a>
+              </li>
+          </ul>
+          <ul class="modal-help__content-social">
+              <li class="modal-help__content-social-list">
+                <a class="modal-help__content-social-link modal-help__content-social-link--icon-vk" href="#!"></a>
+              </li>
+              <li class="modal-help__content-social-list">
+                <a class="modal-help__content-social-link modal-help__content-social-link--icon-instagram" href="#!"></a>
+              </li>
+              <li class="modal-help__content-social-list">
+                <a class="modal-help__content-social-link modal-help__content-social-link--icon-telegram" href="#!"></a>
+              </li>
+              <li class="modal-help__content-social-list">
+                <a class="modal-help__content-social-link modal-help__content-social-link--icon-youtube" href="#!"></a>
+              </li>
+          </ul>
+        </div>
+    </section>
+    <section class="modal-task">
+        <div class="modal-task__content">
+          <div class="modal-task__close" data-close>
+              <div class="modal-task__close-icon"></div>
+          </div>
+          <div class="modal-task__title">Мои дела</div>
+           <div class="modal-task-tabs">
+              <ul class="modal-task-tabs__list">
+                  <li class="modal-task-tabs__item modal-task-tabs__item--active">Все дела</li>
+                  <li class="modal-task-tabs__item">События</li>
+                  <li class="modal-task-tabs__item">Задачи</li>
+              </ul>
+          </div>
+          <form class="modal-task__form" action="#" method="post">
+              <input class="modal-task__input" type="text" placeholder="Поиск и фильтр" name="search" maxlength="20">
+          </form>
+          <div class="modal-task-tabcontainer">
+            <div class="modal-task-content">
+              <ul class="modal-task-content__list">
+                <div class="modal-task-content__date">Сегодня</div>
+                <li class="modal-task-content__item">
+                  <div class="modal-task-content__item-info">
+                    <div class="modal-task-content__item-info-icon modal-task-content__item-info-icon--1"></div>
+                    <div class="modal-task-content__item-info-title">Назначить встречу</div>
+                    <div class="modal-task-content__item-info-priority modal-task-content__item-info-priority--icon1"></div>
+                    <div class="modal-task-content__item-info-status modal-task-content__item-info-status--blue">В работе</div>
+                  </div>
+                   <div class="modal-task-content__item-info">
+                      <a class="modal-task-content__item-info-link" href="#!">Создание логотипа</a>
+                      <span class="modal-task-content__item-info-deadline">16.01.22 16:00</span>
+                  </div>
+                </li>
+                <li class="modal-task-content__item">
+                  <div class="modal-task-content__item-info">
+                    <div class="modal-task-content__item-info-icon modal-task-content__item-info-icon--2"></div>
+                    <div class="modal-task-content__item-info-title">Проверить бриф</div>
+                    <div class="modal-task-content__item-info-priority modal-task-content__item-info-priority--icon2"></div>
+                    <div class="modal-task-content__item-info-status">Ожидает</div>
+                  </div>
+                   <div class="modal-task-content__item-info">
+                      <a class="modal-task-content__item-info-link" href="#!">Корпоративный Ksoil</a>
+                      <span class="modal-task-content__item-info-deadline">16.01.22 18:00</span>
+                  </div>
+                </li>
+                <div class="modal-task-content__date">Завтра</div>
+                <li class="modal-task-content__item">
+                  <div class="modal-task-content__item-info">
+                    <div class="modal-task-content__item-info-icon modal-task-content__item-info-icon--3"></div>
+                    <div class="modal-task-content__item-info-title">Создание логотипа</div>
+                    <div class="modal-task-content__item-info-priority modal-task-content__item-info-priority--icon3"></div>
+                    <div class="modal-task-content__item-info-status">Ожидает</div>
+                  </div>
+                   <div class="modal-task-content__item-info">
+                      <a class="modal-task-content__item-info-link" href="#!">Корпоративный Ksoil</a>
+                      <span class="modal-task-content__item-info-deadline">22.01.22 12:00</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-task-content">1</div>
+            <div class="modal-task-content">2</div>
+          </div>
+        </div>
+    </section>
+    <section class="modal-calendar">
+      <div class="modal-calendar__content">
+        <div class="modal-calendar__close" data-close>
+            <div class="modal-calendar__close-icon"></div>
+        </div>
+        <div class="modal-calendar-tabs">
+          <ul class="modal-calendar-tabs__list">
+              <li class="modal-calendar-tabs__item modal-calendar-tabs__item--active">
+                <div class="modal-calendar-tabs__item-icon modal-calendar-tabs__item-icon--first"></div>
+                Срок
+              </li>
+              <li class="modal-calendar-tabs__item">
+                <div class="modal-calendar-tabs__item-icon modal-calendar-tabs__item-icon--second"></div>
+                Старт-Финиш
+              </li>
+          </ul>
+        </div>
+        <div class="modal-calendar-tabcontainer">
+          <div class="modal-calendar-content">
+             <div id="calendar"></div>
+             <div class="modal-calendar-content__actions">
+                <button class="modal-calendar-content__actions-button">Применить</button>
+                <a class="modal-calendar-content__actions-link" href="#!">Сбросить</a>
+             </div>
+          </div>
+          <div class="modal-calendar-content">
+            <div id="calendar2"></div> 
+             <div class="modal-calendar-content__actions">
+                <button class="modal-calendar-content__actions-button">Применить</button>
+                <a class="modal-calendar-content__actions-link" href="#!">Сбросить</a>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="modal-verify">
+      <div class="modal-verify__content">
+        <div class="modal-verify__icon"></div>
+        <div class="modal-verify__title">Вы уверены?</div>
+        <p class="modal-verify__text">Виджет будет убран с доски, все дополнительные его настройки будут сброшены.</p>
+        <div class="modal-verify__buttons">
+          <div class="modal-verify__button-success">Да, уверен(а)</div>
+          <div class="modal-verify__button-close" data-close>Отменить</div>
+        </div>
+      </div>
+    </section>
+</main>
